@@ -71,3 +71,55 @@
 ## Changing Numbers
 
 - Performing arithmetic on variables does not change the variable - you can only update a variable using the = sign
+
+------
+
+## Exponents
+
+- To use exponents we use the following operator **
+
+  ```python
+  # 2 to the 10th power, or 1024
+  print(2 ** 10)
+  ```
+
+------
+
+## Modulo
+
+- The modulo operator is indicated by `%` and gives the remainder of a division calculation. If the two numbers are  divisible, then the result of the modulo operation will be 0.
+
+  ```python
+  # Prints 4 because 29 / 5 is 5 with a remainder of 4
+  print(29 % 5)
+  ```
+
+------
+
+## Concatenation
+
+- The `+` operator doesn’t just add two numbers, it can also “add” two strings! The process of combining two strings is called string concatenation
+
+------
+
+## Plus Equals
+
+- Python offers a shorthand for updating variables .When you have a number saved in a variable and want to add to the current value of the variable we can use the += operator
+
+------
+
+## Multi-line Strings 
+
+- By using three quote-marks (`"""` or `'''`) instead of one, we tell the program that the string doesn’t end until the next triple-quote
+
+------
+
+## User Input
+
+- While we output a variable’s value using `print()`, we assign information to a variable using `input()`. The `input()` function requires a prompt message, which it will print out for the user before they enter the new information. For example:
+
+  ```python
+  likes_snakes = input("Do you like snakes? ")
+  ```
+
+  
