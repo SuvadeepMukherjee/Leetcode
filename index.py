@@ -1,1 +1,2 @@
-message_string = "Hello there"
+print(1+1)
+print("Hello World!")
