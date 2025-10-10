@@ -63,3 +63,16 @@ if we omit starting_index it takes from begining , if we omit ending_index or gi
 - Tab `\t`
 - Single quote `\'`
 - Backslash `\\`
+
+## Triple Quoted Strings
+
+------
+
+- If we want multiple line strings we can use `"""` or `'''`
+
+```python
+str= '''sdfxcgnhvbj
+ssssghbhcsbnmnmcmn
+xfczvBXNMC'''
+```
+
