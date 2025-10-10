@@ -1,1 +1,4 @@
-f"there are {24*60*60} seconds in a day"
+if color=="green":
+    print("Beginner Ski Run")
+elif color=="blue":
+    print("Intermediate Ski Run")
