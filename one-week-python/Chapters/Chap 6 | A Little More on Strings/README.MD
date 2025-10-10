@@ -53,3 +53,13 @@ print(str[2:8:2])
 Syntax is starting_index(inclusive), ending_index(exclusive),step
 
 if we omit starting_index it takes from begining , if we omit ending_index or give a ending_index far greater than total index it will go towards end 
+
+## Escape Characters
+
+------
+
+- Newline `\n`
+- Double Quote `\"`
+- Tab `\t`
+- Single quote `\'`
+- Backslash `\\`
