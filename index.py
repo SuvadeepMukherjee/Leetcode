@@ -1,4 +1,4 @@
-if color=="green":
-    print("Beginner Ski Run")
-elif color=="blue":
-    print("Intermediate Ski Run")
+color = input("Enter a color:")
+
+if color:
+    print(f"{color} is my favorite color too!")
