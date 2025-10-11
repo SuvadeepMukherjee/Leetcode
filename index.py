@@ -1,4 +1,4 @@
-color = input("Enter a color:")
+word ="Hello"
 
-if color:
-    print(f"{color} is my favorite color too!")
+for char in word:
+    print(char)
