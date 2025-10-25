@@ -310,4 +310,181 @@
   # ['bob', 'doe', 'jane', 'alice']
   ```
 
+## List Comprehension 
+
+```python
+arr =[i for i in range(5)]
+print(arr)
+
+# [0,1,2,3,4]
+
+arr2 = [i+i for i in range(5) ]
+print(arr2)
+
+# [0,2,4,6,8]
+```
+
+## 2D Lists
+
+```python
+arr =[[0]*4 for i in range(4)]
+print(arr)
+
+# [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+```
+
+## Strings
+
+- Strings are similar to arrays 
+
+- ```python
+  s="abc"
+  print(s[0:2])
+  #ab
+  ```
+
+- Strings are immutable so adding to a string creates a new string 
+
+  ```python
+  s="abc"
+  s+="def"
+  print(s)
   
+  # "abcdef"
+  ```
+
+- Valid numeric strings can be converted , similarly numbers can be converted to strings 
+
+- ```python
+  print(int("123")+int("123"))
+  
+  # 246
+  
+  print(str(123)+str(123))
+  
+  # 123123
+  ```
+
+- In rare cases you may need the ASCII value of a char 
+
+  ```python
+  print(ord("a"))
+  
+  # 97
+  
+  print(ord("b"))
+  
+  # 98
+  ```
+
+## Queue
+
+```python
+from collections import deque
+
+queue = deque()
+queue.append(1)
+queue.append(2)
+print(queue)
+queue.popleft() # O(1)
+print(queue)
+ 
+queue.appendleft(1)
+print(queue)
+
+queue.pop()
+print(queue)
+```
+
+## HashSet
+
+```python
+mySet = set()
+# no duplicates
+mySet.add(1)
+mySet.add(2)
+print(mySet)
+
+print(len(mySet))
+print(1 in mySet)
+print(2 in mySet)
+print(3 in mySet)
+
+mySet.remove(2)
+print(2 in mySet)
+
+#list to set
+print(set([1,2,3]))
+
+#Set Comprehension
+mySet ={i for i in range(5)}
+print(mySet)
+```
+
+## HashMap(aka dict)
+
+```python
+myMap ={}
+myMap["alice"] = 88
+myMap["bob"] = 77
+# cant have duplicate keys
+print(myMap)
+
+print(len(myMap))
+
+# Can modify values
+myMap["alice"] = 80
+print(myMap["alice"])
+
+# Searching whether a key exists in a HashMap
+print("alice" in myMap)
+myMap.pop("alice")
+print("alice" in myMap)
+
+myMap = {"alice":90,"bob":70}
+print(myMap)
+
+#Dict Comprehension
+myMap ={i:2*i for i in range(3)}
+print(myMap)
+
+#Looping through Maps
+myMap = {"alice":90,"bob":70}
+for key in myMap:
+     print(key,myMap[key])
+
+for val in myMap.values():
+    print(val)
+
+for key,val in myMap.items():
+    print(key,val)
+```
+
+## Tuples
+
+- Tuples are like arrays but immutable 
+
+```python
+tup =(1,2,3)
+print(tup)
+
+#We can index them 
+print(tup[0])
+print(tup[-1])
+
+# But we cant modify them 
+# tup[0] = 0 # Cant do this
+
+# tuples can be used as keys for hash map/set
+myMap ={(1,2):3}
+print(myMap[(1,2)])
+
+mySet = set()
+mySet.add((1,2))
+print((1,2) in mySet)
+
+# lists cant be keys 
+# myMap[[3,4]] = 5 # illelegal
+```
+
+## Heaps
