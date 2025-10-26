@@ -1,6 +1,6 @@
 # Arrays and Strings 
 
-- Arrays and Strings ◻️
+- Arrays and Strings ✅
 - Two Pointers ◻️
 - Reverse String ◻️
 - Squares of a sorted array ◻️
