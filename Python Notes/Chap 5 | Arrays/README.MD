@@ -11,15 +11,18 @@
 
   ```python
   arr=[1,2,3]
+  # append => add to end
+  # Time Complexity of append is O(1)
   arr.append(4)
   arr.append(5)
   print(arr)
   
   # [1,2,3,4,5]
-  
+  # pop => remove from end
   arr.pop()
   print(arr)
   #[1,2,3,4]
+  # insert => insert at a specific position
   arr.insert(1,7) # O(n)
   print(arr)
   #[1, 7, 2, 3, 4] 
