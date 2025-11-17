@@ -249,3 +249,28 @@ var pivotIndex = function(nums) {
 Time Complexity : O(n)
 
 Space Complexity : O(n)
+
+---
+
+[Range Sum Query -Immutable](https://leetcode.com/problems/range-sum-query-immutable/description/)
+
+**Solution**:
+
+```js
+var NumArray = function(nums) {
+    
+    this.prefix = [nums[0]];
+    for (let i = 1; i < nums.length; i++) {
+        this.prefix[i] = this.prefix[i - 1] + nums[i];
+    }
+};
+NumArray.prototype.sumRange = function(left, right) {
+    if (left === 0) return this.prefix[right];
+    return this.prefix[right] - this.prefix[left - 1];
+};
+```
+
+Time (constructor): **O(n)**
+ Space: **O(n)**
+ Time per `sumRange` query: **O(1)**
+ Space per query: **O(1)**
