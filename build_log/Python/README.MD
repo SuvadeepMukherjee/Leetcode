@@ -1,3 +1,0 @@
-# Python build log 
-
-- Move all notes from crash course to individual chapters ✅ 
