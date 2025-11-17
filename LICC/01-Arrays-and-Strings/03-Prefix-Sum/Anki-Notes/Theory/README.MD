@@ -4,7 +4,8 @@
 
 **Solution**:
 
-Sum of subarray from i to j (inclusive) is `prefix[j] - prefix[i]+ nums[i]`
+- Sum of subarray from i to j (inclusive) is `prefix[j] - prefix[i]+ nums[i]`
+- Sum of subarray from i to j (inclusive) is `prefix[j]- prefix[i-1]`
 
 Time Complexity : O(1)
 
