@@ -11,7 +11,6 @@ function printFn(i){
     if(i > 3) return 
     console.log(i)
     printFn(i+1)
-    console.log(`End of call where i =${i}`)
     return
 }
 
@@ -33,3 +32,22 @@ function fibonacci(i){
 console.log(fibonacci(5))
 ```
 
+**Q3**:Draw the recursion tree and tell what will be logged to the console ? 
+
+```js
+function printFn(i){
+    if(i > 3) return 
+    console.log(i)
+    printFn(i+1)
+    console.log(`End of call where i =${i}`)
+    return
+}
+
+printFn(1)
+```
+
+**Solution**:
+
+The following will be logged to the console ➡️
+
+`1, 2 , 3 , End of call where i =3 , End of call where i = 2 , End of call where i =1`  
