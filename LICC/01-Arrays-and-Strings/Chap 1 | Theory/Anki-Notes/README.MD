@@ -34,11 +34,9 @@ Strings are immutable in JS
 - Even though a single operation might occasionally take longer (like when the internal array needs to grow and allocate more memory) the average cost per operation over many operations remain constant time 
 - appending to the end of an array is amortized O(1) in JS 
 
-**Q6**: Arrat and String Time Complexity of various operations
+**Q6**: Array and String Time Complexity of various operations
 
 **Solution**:
-
-
 
 | Operation                  | Array          | String |
 | -------------------------- | -------------- | ------ |
